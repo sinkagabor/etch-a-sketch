@@ -15,11 +15,22 @@
         <div id="settingsDiv" class="flex center">
             <button id="blackBtn" class="settingsBtn">Black</button>
             <button id="psyBtn" class="settingsBtn">Psychedelic</button>
+            <button id="grayBtn" class="settingsBtn">Grayscale</button>
             <button id="eraserBtn" class="settingsBtn">Eraser</button>
-            <button id="clearBtn" class="settingsBtn">Clear</button>
-            <button id="resizeBtn" class="settingsBtn">Resize</button>
+            <button id="colorBtn" class="settingsBtn">Pick: <input type="color" value="#ff0000" id="input-color"></button>
         </div>
-        <div id="boardContainer"></div>
+        <div id="containerWrapper">
+            <div id="container"></div>
+        </div>
+
+        <div class="gridOptions flex center">
+            <button id="clearBtn" class="settingsBtn">Clear</button>
+            <div class="sizeContainer">
+                <p>Pixel Size</p>
+                <input type="range" min="4" max="100" value="15" id="sizeRange" class="slider">
+                <p>S to XL</p>
+            </div>
+        </div>
         <script src="logic.js" async defer></script>
     </body>
 </html>

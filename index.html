@@ -9,22 +9,23 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div class="frontTitle flex center">
-            <h1>Etch-A-Sketch</h1>
+        <div class="frontTitle">
+            Etch-A-Sketch
         </div>
-        <div id="settingsDiv" class="flex center">
-            <button id="blackBtn" class="settingsBtn">Black</button>
-            <button id="psyBtn" class="settingsBtn">Psychedelic</button>
-            <button id="grayBtn" class="settingsBtn">Grayscale</button>
-            <button id="eraserBtn" class="settingsBtn">Eraser</button>
-            <button id="colorBtn" class="settingsBtn">Pick: <input type="color" value="#ff0000" id="input-color"></button>
-        </div>
-        <div id="containerWrapper">
-            <div id="container"></div>
+        <div class="flex center">
+            <button class="colorChoice" data-color="black">Black</button>
+            <button class="colorChoice" data-color="psy">Psychedelic</button>
+            <button class="colorChoice" data-color="gray">Grayscale</button>
+            <button class="colorChoice" data-color="eraser">Eraser</button>
+            <button class="colorChoice">Pick: <input type="color" value="#0075ff" id="inputColor"></button>
         </div>
 
-        <div class="gridOptions flex center">
-            <button id="clearBtn" class="settingsBtn">Clear</button>
+        <div class="containerWrapper">
+            <div class="container"></div>
+        </div>
+
+        <div class="gridOptions">
+            <button class="clear">Clear</button>
             <div class="sizeContainer">
                 <p>Pixel Size</p>
                 <input type="range" min="4" max="100" value="15" id="sizeRange" class="slider">
